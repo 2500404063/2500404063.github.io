@@ -1,3 +1,7 @@
+document.body.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+}, { passive: false });
+
 function bgmcontrol1() {
     document.querySelector("#audio_player").src = "./music/可惜我们不会再见了.mp3";
     jumpTo1();
