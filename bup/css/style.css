@@ -1,0 +1,43 @@
+.p1_div{
+    background-image: url("../img/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.p2_div{
+    background-image: url("../img/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.p3_div{
+    background-image: url("../img/img6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.p4_div{
+    background-image: url("../img/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h1{
+    user-select: none;
+}
+body{
+    overflow: hidden;
+}
+
+@keyframes anim_fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.text_out{
+    opacity: 0;
+}
+.text_fadein{
+    animation-name: anim_fadein;
+    animation-duration: 4s;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Edge</title>
+</head>
+
+<body class="h-100" onload="bgmcontrol1();">
+    <audio id="audio_player" src="" autoplay></audio>
+    <div id="page1" class="container-fluid h-100 p1_div position-relative">
+        <div class="row">
+            <div class="col mt-5">
+                <h1 class="display-3 text-center text_fadein">Hi, FanXing</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text_out">It's been a long time, </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6 text-end text_out">we have walked.</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text_out">The days with you, I felt, </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6 text-end text_out">VERY HAPPY!</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text-end text_out">Thanks for having you.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute w-100 pb-2" style="bottom:1rem;">
+            <div class="row justify-content-center align-bottom">
+                <div class="col-12 align-self-end text-center">
+                    <button class="btn btn-outline-primary text_out" onclick="jumpTo2();">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page2" class="container-fluid h-100 p2_div position-relative">
+        <div class="row">
+            <div class="col mt-5">
+                <h1 class="display-3 text-center text_out">But I thought.</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text_out">We have got to, </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6 text-end text_out">meet our departure.</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text_out">That's all because</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-end text_out" style="font-weight: 350;">Now I have no ability to play a love story,
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-start text_out" style="font-weight: 350;">And I cannot pay much attention on you, for I do
+                        have many aims to finish.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute w-100 pb-2" style="bottom:1rem;">
+            <div class="row justify-content-center align-bottom">
+                <div class="col-12 align-self-end text-center">
+                    <button class="btn btn-outline-primary text_out" onclick="jumpTo3();">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="container-fluid h-100 p3_div position-relative text-white">
+        <div class="row">
+            <div class="col mt-5">
+                <h1 class="display-3 text-center text_out">You Are Brilliant.</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="row mt-4">
+                <div class="col">
+                    <h4 style="font-weight: 300;" class="text_out">You are a,</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-end text_out" style="font-weight: 350;">Clever and Kind Girl.</h4>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text_out">You to me,</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-end text_out" style="font-weight: 350;">It's my fortune to meet you.</h4>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h3 class="text-start text_out" style="font-weight: 300;">I believe that</h3>
+                    <h3 style="font-weight: 350;" class="text_out">someone is better than me, to suit to you.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute w-100 pb-2" style="bottom:1rem;">
+            <div class="row justify-content-center align-bottom">
+                <div class="col-12 align-self-end text-center">
+                    <button class="btn btn-outline-primary text_out" onclick="jumpTo4();">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="container-fluid h-100 p4_div position-relative text-white">
+        <div class="row">
+            <div class="col mt-5">
+                <h1 class="display-3 text-center text_out">最 后</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="row mt-4">
+                <div class="col">
+                    <h4 style="font-weight: 300;" class="text_out">放轻松吧，</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-end text_out" style="font-weight: 350;">这段美好的回忆值得珍藏</h4>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h1 class="display-6 text_out">我们会遇见更好的自己</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-end text_out" style="font-weight: 350;">不再因为自己的无能而失去爱情</h4>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <h3 class="text-start text_out" style="font-weight: 300;">BGM:《Summertime Sadness》</h3>
+                    <h3 class="text-end text_out" style="font-weight: 350;">Be Happy and Be Up!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
