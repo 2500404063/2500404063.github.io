@@ -19,8 +19,8 @@ let timer;
 let count;
 let t1, t2, t3, t4, index = 0, times = 0;
 var list;
-var eleurl = window.location.href;
 function jumpTo1() {
+    window.location.hash("page1");
     list = document.getElementById("page1").getElementsByClassName("text_out");
     times = list.length;
     t1 = setInterval(() => {
@@ -34,8 +34,7 @@ function jumpTo1() {
 }
 
 function jumpTo2() {
-    window.location.href = eleurl + "#page2";
-
+    window.location.hash("page2");
     list = document.getElementById("page2").getElementsByClassName("text_out");
     times = list.length;
     t2 = setInterval(() => {
@@ -49,8 +48,7 @@ function jumpTo2() {
 }
 
 function jumpTo3() {
-    window.location.href = eleurl + "#page3";
-
+    window.location.hash("page3");
     list = document.getElementById("page3").getElementsByClassName("text_out");
     times = list.length;
     t3 = setInterval(() => {
@@ -65,8 +63,7 @@ function jumpTo3() {
 
 function jumpTo4() {
     bgmcontrol2();
-    window.location.href = eleurl + "#page4";
-
+    window.location.hash("page4");
     list = document.getElementById("page4").getElementsByClassName("text_out");
     times = list.length;
     t4 = setInterval(() => {
