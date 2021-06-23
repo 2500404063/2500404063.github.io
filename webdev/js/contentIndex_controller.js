@@ -72,7 +72,7 @@ function getOutOfNode() {
 let contentContainer = document.getElementById("contentBody");
 let contentRequester = new XMLHttpRequest();
 function getPage(obj) {
-    document.documentElement.scrollTop = document.getElementById("contentBody").offsetTop;
+    window.location.hash = "contentBody";
     setTimeout(function () {
         // var contentContainer = window.frames[0].document.getElementById("contentBody");
         var nodeName = obj.dataset.tag;
