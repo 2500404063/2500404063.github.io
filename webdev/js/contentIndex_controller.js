@@ -73,7 +73,7 @@ let contentContainer = document.getElementById("contentBody");
 let contentRequester = new XMLHttpRequest();
 function getPage(obj) {
     if (document.documentElement.clientWidth < 768) {
-        document.getElementById("contentBody").style.display = 'block';
+        document.getElementById("contentWarp").style.display = 'block';
         document.getElementById("navigation").style.display = 'none';
     }
     setTimeout(function () {
@@ -111,7 +111,7 @@ function getPage(obj) {
 
 function getDefaultPage() {
     if (document.documentElement.clientWidth < 768) {
-        document.getElementById("contentBody").style.display = 'block';
+        document.getElementById("contentWarp").style.display = 'block';
         document.getElementById("navigation").style.display = 'none';
     }
     setTimeout(function () {
@@ -141,7 +141,7 @@ function showMenu() {
     if (clickTime - lastClickTime < 300) {
         if (document.documentElement.clientWidth < 768) {
             document.getElementById("navigation").style.display = 'block';
-            document.getElementById("contentBody").style.display = 'none';
+            document.getElementById("contentWarp").style.display = 'none';
         }
     }
     lastClickTime = clickTime;
