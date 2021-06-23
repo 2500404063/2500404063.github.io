@@ -107,7 +107,7 @@ function getPage(obj) {
 }
 
 function getDefaultPage() {
-    document.documentElement.scrollTop = document.getElementById("contentBody").offsetTop;
+    window.location.hash="contentBody";
     setTimeout(function () {
         var pageURL = "./pages/default/default.md";
         //Now we start to GET content.
@@ -133,7 +133,7 @@ var lastClickTime;
 function showMenu() {
     clickTime = new Date();
     if (clickTime - lastClickTime < 300) {
-        document.documentElement.scrollTop = 0;
+        window.location.hash = "";
     }
     lastClickTime = clickTime;
 }
