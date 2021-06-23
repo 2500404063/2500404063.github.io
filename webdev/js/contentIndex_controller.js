@@ -72,8 +72,10 @@ function getOutOfNode() {
 let contentContainer = document.getElementById("contentBody");
 let contentRequester = new XMLHttpRequest();
 function getPage(obj) {
-    window.location.hash = "";
-    window.location.hash = "contentBody";
+    if (document.documentElement.clientWidth < 768) {
+        document.getElementById("contentBody").style.display = 'block';
+        document.getElementById("navigation").style.display = 'none';
+    }
     setTimeout(function () {
         // var contentContainer = window.frames[0].document.getElementById("contentBody");
         var nodeName = obj.dataset.tag;
@@ -108,8 +110,10 @@ function getPage(obj) {
 }
 
 function getDefaultPage() {
-    window.location.hash = "";
-    window.location.hash = "contentBody";
+    if (document.documentElement.clientWidth < 768) {
+        document.getElementById("contentBody").style.display = 'block';
+        document.getElementById("navigation").style.display = 'none';
+    }
     setTimeout(function () {
         var pageURL = "./pages/default/default.md";
         //Now we start to GET content.
@@ -135,8 +139,10 @@ var lastClickTime;
 function showMenu() {
     clickTime = new Date();
     if (clickTime - lastClickTime < 300) {
-        window.location.hash = "contentBody";
-        window.location.hash = "";
+        if (document.documentElement.clientWidth < 768) {
+            document.getElementById("navigation").style.display = 'block';
+            document.getElementById("contentBody").style.display = 'none';
+        }
     }
     lastClickTime = clickTime;
 }
