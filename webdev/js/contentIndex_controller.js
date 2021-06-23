@@ -72,6 +72,7 @@ function getOutOfNode() {
 let contentContainer = document.getElementById("contentBody");
 let contentRequester = new XMLHttpRequest();
 function getPage(obj) {
+    window.location.hash = "";
     window.location.hash = "contentBody";
     setTimeout(function () {
         // var contentContainer = window.frames[0].document.getElementById("contentBody");
@@ -107,7 +108,8 @@ function getPage(obj) {
 }
 
 function getDefaultPage() {
-    window.location.hash="contentBody";
+    window.location.hash = "";
+    window.location.hash = "contentBody";
     setTimeout(function () {
         var pageURL = "./pages/default/default.md";
         //Now we start to GET content.
@@ -133,6 +135,7 @@ var lastClickTime;
 function showMenu() {
     clickTime = new Date();
     if (clickTime - lastClickTime < 300) {
+        window.location.hash = "contentBody";
         window.location.hash = "";
     }
     lastClickTime = clickTime;
