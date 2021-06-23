@@ -132,7 +132,7 @@ function getDefaultPage() {
 var lastClickTime;
 function showMenu() {
     clickTime = new Date();
-    if (clickTime - lastClickTime < 200) {
+    if (clickTime - lastClickTime < 300) {
         document.documentElement.scrollTop = 0;
     }
     lastClickTime = clickTime;
