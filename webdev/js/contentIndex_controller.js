@@ -142,6 +142,10 @@ function showMenu() {
         if (document.documentElement.clientWidth < 768) {
             document.getElementById("navigation").style.display = 'block';
             document.getElementById("contentWarp").style.display = 'none';
+            document.querySelector("#navigation").classList.add("anim-tender-show");
+            setTimeout(function () {
+                document.querySelector("#navigation").classList.remove("anim-tender-show");
+            }, 400);
         }
     }
     lastClickTime = clickTime;
