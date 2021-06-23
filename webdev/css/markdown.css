@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'YouYuan';
+    src: url(../fonts/simyou.ttf);
+}
+
+:root {
+    --bg-color: white;
+    --font-family: "Microsoft YaHei", "微软雅黑", "Heiti", "黑体", "YouYuan";
+    /*h1*/
+    --border-bottom: #c5c5c5;
+    --border-bottom-second: #c5c5c5b4;
+    /*All box background*/
+    --box-bg: #f5f7f9;
+    /*Universal color*/
+    --color-primary: #3884ff;
+    --code-bg: #e6ecf1
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    font-family: var(--font-family)!important;
+}
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: solid 1px var(--border-bottom);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+    color: #777;
+}
+
+p, li {
+    font-family: var(--font-family)!important;
+}
+
+blockquote {
+    width: 100%;
+    background-color: var(--box-bg);
+    border-left: 4px solid var(--color-primary);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+}
+
+hr {
+    border: 0;
+    color: #d0d0d5;
+    background-size: 100%;
+    background-image: linear-gradient(to right, rgba(190, 190, 190, 0.301), rgba(0, 0, 0, 0.75), rgba(190, 190, 190, 0.3));
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+table thead {
+    font-weight: bold;
+    border-bottom: solid 2px var(--border-bottom)!important;
+}
+
+table tr {
+    /*border-bottom: dotted 2px var(--border-bottom-second)!important;*/
+}
+
+table th, td {
+    padding: 10px 16px;
+}
+
+code {
+    border-radius: 10px;
+}
+
+td.hljs-ln-line.hljs-ln-numbers {
+    padding-right: 15px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+input[type='checkbox']:before {
+    border-radius: 0.2rem;
+    margin-top: -0.08rem;
+    margin-left: -0.1rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #e6ecf1;
+    content: " ";
+    display: block;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+}
+
+input[type='checkbox']:hover:before {
+    background-color: #d8e0e7;
+}
+
+input[type="checkbox"]:checked:before {
+    background-color: #3884ff;
+}
+
+input[type="checkbox"]:hover:checked:before {
+    background-color: #1968e6;
+}
