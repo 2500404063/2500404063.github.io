@@ -76,37 +76,35 @@ function getPage(obj) {
         document.getElementById("contentWarp").style.display = 'block';
         document.getElementById("navigation").style.display = 'none';
     }
+    document.querySelector("#contentBody").classList.add("anim-tender-show");
     setTimeout(function () {
-        // var contentContainer = window.frames[0].document.getElementById("contentBody");
-        var nodeName = obj.dataset.tag;
-        var _contentArray = contentArray;
-        for (const key in indexURL) {
-            if (indexURL[key] != "~") {
-                _contentArray = _contentArray[indexURL[key]];
+        document.querySelector("#contentBody").classList.remove("anim-tender-show");
+    }, 400);
+    // var contentContainer = window.frames[0].document.getElementById("contentBody");
+    var nodeName = obj.dataset.tag;
+    var _contentArray = contentArray;
+    for (const key in indexURL) {
+        if (indexURL[key] != "~") {
+            _contentArray = _contentArray[indexURL[key]];
+        }
+    }
+    var pageURL = _contentArray[nodeName];
+    //Now we start to GET content.
+    contentRequester.open("GET", pageURL, true);
+    contentRequester.send();
+    contentRequester.onreadystatechange = function () {
+        if (contentRequester.readyState == 4 && contentRequester.status == 200) {
+            contentContainer.innerHTML = converter.makeHtml(contentRequester.responseText);
+            var codeBlocks = document.querySelectorAll('pre code');
+            for (const key in codeBlocks) {
+                const element = codeBlocks[key];
+                hljs.highlightAll();
+                hljs.lineNumbersBlock(element, {
+                    singleLine: true
+                });
             }
         }
-        var pageURL = _contentArray[nodeName];
-        //Now we start to GET content.
-        document.querySelector("#contentBody").classList.add("anim-tender-show");
-        setTimeout(function () {
-            document.querySelector("#contentBody").classList.remove("anim-tender-show");
-        }, 400);
-        contentRequester.open("GET", pageURL, true);
-        contentRequester.send();
-        contentRequester.onreadystatechange = function () {
-            if (contentRequester.readyState == 4 && contentRequester.status == 200) {
-                contentContainer.innerHTML = converter.makeHtml(contentRequester.responseText);
-                var codeBlocks = document.querySelectorAll('pre code');
-                for (const key in codeBlocks) {
-                    const element = codeBlocks[key];
-                    hljs.highlightAll();
-                    hljs.lineNumbersBlock(element, {
-                        singleLine: true
-                    });
-                }
-            }
-        }
-    }, 120);
+    }
 }
 
 function getDefaultPage() {
