@@ -9,21 +9,21 @@ function btn_myself() {
 }
 
 function btn_webdev() {
-    window.open("./webdev/index.html", "_self")
+    window.open("./blocks/webdev.html", "_self")
 }
 
 function btn_appdev() {
-    window.open("./appdev/index.html", "_self")
+    window.open("./blocks/appdev.html", "_self")
 }
 
 function btn_hardware() {
-    window.open("./hardware/index.html", "_self")
+    window.open("./blocks/hardware.html", "_self")
 }
 
 function btn_ai() {
-    window.open("./ai/index.html", "_self")
+    window.open("./blocks/ai.html", "_self")
 }
 
 function btn_psyeco() {
-    window.open("./psyeco/index.html", "_self")
+    window.open("./blocks/psyeco.html", "_self")
 }
