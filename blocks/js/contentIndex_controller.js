@@ -112,25 +112,29 @@ function getDefaultPage() {
         document.getElementById("contentWarp").style.display = 'block';
         document.getElementById("navigation").style.display = 'none';
     }
+    document.querySelector("#contentBody").classList.add("anim-tender-show");
     setTimeout(function () {
-        var pageURL = "./pages/default/default.md";
-        //Now we start to GET content.
-        contentRequester.open("GET", pageURL, true);
-        contentRequester.send();
-        contentRequester.onreadystatechange = function () {
-            if (contentRequester.readyState == 4 && contentRequester.status == 200) {
-                contentContainer.innerHTML = converter.makeHtml(contentRequester.responseText);
-                var codeBlocks = document.querySelectorAll('pre code');
-                for (const key in codeBlocks) {
-                    const element = codeBlocks[key];
-                    hljs.highlightAll();
-                    hljs.lineNumbersBlock(element, {
-                        singleLine: true
-                    });
-                }
+        document.querySelector("#contentBody").classList.remove("anim-tender-show");
+    }, 400);
+    // var contentContainer = window.frames[0].document.getElementById("contentBody");
+    var nodeName = "Default Page";
+    var pageURL = _contentArray[nodeName];
+    //Now we start to GET content.
+    contentRequester.open("GET", pageURL, true);
+    contentRequester.send();
+    contentRequester.onreadystatechange = function () {
+        if (contentRequester.readyState == 4 && contentRequester.status == 200) {
+            contentContainer.innerHTML = converter.makeHtml(contentRequester.responseText);
+            var codeBlocks = document.querySelectorAll('pre code');
+            for (const key in codeBlocks) {
+                const element = codeBlocks[key];
+                hljs.highlightAll();
+                hljs.lineNumbersBlock(element, {
+                    singleLine: true
+                });
             }
         }
-    }, 120);
+    }
 }
 
 var lastClickTime;
