@@ -90,7 +90,9 @@ table th, td {
 }
 
 code {
-    border-radius: 10px;
+    border-radius: 4px;
+    background-color: rgb(238, 240, 241);
+    padding: 5px;
 }
 
 td.hljs-ln-line.hljs-ln-numbers {
@@ -118,6 +120,7 @@ input[type='checkbox']:hover:before {
 
 input[type="checkbox"]:checked:before {
     background-color: #3884ff;
+    content: "√";
 }
 
 input[type="checkbox"]:hover:checked:before {
