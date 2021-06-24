@@ -118,7 +118,7 @@ function getDefaultPage() {
     }, 400);
     // var contentContainer = window.frames[0].document.getElementById("contentBody");
     var nodeName = "Default Page";
-    var pageURL = _contentArray[nodeName];
+    var pageURL = contentArray[nodeName];
     //Now we start to GET content.
     contentRequester.open("GET", pageURL, true);
     contentRequester.send();
