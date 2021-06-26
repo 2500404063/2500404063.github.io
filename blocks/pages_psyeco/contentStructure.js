@@ -1,13 +1,16 @@
 var contentArray = {
     "Default Page": "./pages_psyeco/default/default.md",
-    "Html": {
-        "Elements": {
-            "item1_1_1": "./pages_psyeco/hello/main.md"
+    "生活哲学": {
+        "心理学": {},
+        "论性格品质": "./pages_psyeco/hello/main.md",
+        "论友情": {},
+        "论爱情": {},
+        "论事业": {
+            "工作-心态-健康": "./pages_psyeco/life-psy/cause/1.md"
         },
-        "item1_1": "./pages_psyeco/hello/main.md",
+        "论学习": {}
     },
-    "list2": {
-        "item2_1": "./pages_psyeco/hello/main.md",
-        "item2_2": "./pages_psyeco/hello/main.md"
-    }
+    "经济学":{},
+    "博弈论":{},
+    "塔罗牌":{}
 };
