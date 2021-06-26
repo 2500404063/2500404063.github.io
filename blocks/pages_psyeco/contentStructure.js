@@ -2,7 +2,7 @@ var contentArray = {
     "Default Page": "./pages_psyeco/default/default.md",
     "生活哲学": {
         "心理学": {},
-        "论性格品质": "./pages_psyeco/hello/main.md",
+        "论性格": {},
         "论友情": {},
         "论爱情": {},
         "论事业": {
