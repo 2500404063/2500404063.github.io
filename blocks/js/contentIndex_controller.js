@@ -13,6 +13,8 @@
 // };
 // Code above will be defined in different blocks' pages folder.
 
+var loadingCode = "<div class='loadingParent'><div class='spinner-border text-primary' role='status' style='font-size:2rem;width: 5rem;height: 5rem;'></div></div>";
+
 let indexURL = ["~"];
 
 function buildContentIndex() {
@@ -72,6 +74,7 @@ function getOutOfNode() {
 let contentContainer = document.getElementById("contentBody");
 let contentRequester = new XMLHttpRequest();
 function getPage(obj) {
+    contentContainer.innerHTML = loadingCode;
     if (document.documentElement.clientWidth < 768) {
         document.getElementById("contentWarp").style.display = 'block';
         document.getElementById("navigation").style.display = 'none';
@@ -108,6 +111,7 @@ function getPage(obj) {
 }
 
 function getDefaultPage() {
+    contentContainer.innerHTML = loadingCode;
     if (document.documentElement.clientWidth < 768) {
         document.getElementById("contentWarp").style.display = 'block';
         document.getElementById("navigation").style.display = 'none';
@@ -124,7 +128,9 @@ function getDefaultPage() {
     contentRequester.send();
     contentRequester.onreadystatechange = function () {
         if (contentRequester.readyState == 4 && contentRequester.status == 200) {
-            contentContainer.innerHTML = converter.makeHtml(contentRequester.responseText);
+            contentContainer.innerHTML = getMathJaxMarkDown(contentRequester.responseText);
+            MathJax.typeset();
+            contentContainer.innerHTML = converter.makeHtml(contentContainer.innerHTML);
             var codeBlocks = document.querySelectorAll('pre code');
             for (const key in codeBlocks) {
                 const element = codeBlocks[key];
@@ -151,4 +157,22 @@ function showMenu() {
         }
     }
     lastClickTime = clickTime;
+}
+
+function getMathJaxMarkDown(str) {
+    var mathlist = new Array();
+    var count = 0;
+    var start = -1, end = -1;
+    var operation = str;
+    while ((start = operation.search(/\{\[\{.*\}\]\}/)) >= 0) {
+        end = operation.search(/\}\]\}/);
+        mathlist.push(operation.slice(start + 3, end));
+        operation = operation.replace(/\{\[\{.*\}\]\}/, "{^{" + count + "}^}");
+    }
+    operation = converter.makeHtml(operation);
+    for (let index = 0; index < mathlist.length; index++) {
+        const element = array[index];
+        operation = operation.replace("{^{" + index + "}^}", element);
+    }
+    return operation;
 }
