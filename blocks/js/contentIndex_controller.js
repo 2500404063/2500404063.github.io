@@ -170,6 +170,7 @@ function getMathJaxMarkDown(str) {
         end = operation.search(/\}\]\}/ig);
         mathlist.push(operation.slice(start + 3, end));
         operation = operation.replace(/\{\[\{[\s\S]*?\}\]\}/, "{^{" + count + "}^}");
+        count++;
     }
     operation = converter.makeHtml(operation);
     for (let index = 0; index < mathlist.length; index++) {
