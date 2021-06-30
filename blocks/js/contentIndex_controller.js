@@ -97,7 +97,9 @@ function getPage(obj) {
     contentRequester.send();
     contentRequester.onreadystatechange = function () {
         if (contentRequester.readyState == 4 && contentRequester.status == 200) {
-            contentContainer.innerHTML = converter.makeHtml(contentRequester.responseText);
+            contentContainer.innerHTML = getMathJaxMarkDown(contentRequester.responseText);
+            MathJax.typeset();
+            contentContainer.innerHTML = converter.makeHtml(contentContainer.innerHTML);
             var codeBlocks = document.querySelectorAll('pre code');
             for (const key in codeBlocks) {
                 const element = codeBlocks[key];
