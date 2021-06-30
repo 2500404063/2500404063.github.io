@@ -121,7 +121,9 @@ function getPage(obj) {
 - 
 {[{
 方向导数为函数在某一个方向上的导数，具体地，定义xy平面上一点(a, b)以及单位向量$\vec u = (\cos \theta , \sin \theta )$，在曲面z=f(x, y)上，从点(a, b, f(a, b))出发，沿$\vec u = (\cos \theta , \sin \theta )$方向走t单位长度后，函数值z为F(t)=f(a+tcosθ, b+tsinθ)，则点(a, b)处$\vec u = (\cos \theta , \sin \theta )$方向的方向导数为：
+}]}
 
+{[{
 $$
 \begin{aligned} &\left.\frac{d}{d t} f(a+t \cos \theta, b+t \sin \theta)\right|_{t=0} \\=& \lim _{t \rightarrow 0} \frac{f(a+t \cos \theta, b+t \sin \theta) - f(a, b)}{t} \\=& \lim _{t \rightarrow 0} \frac{f(a+t \cos \theta, b+t \sin \theta) - f(a, b+t \sin \theta)}{t} + \lim _{t \rightarrow 0} \frac{f(a, b+t \sin \theta) - f(a, b)}{t} \\=& \frac{\partial}{\partial x} f(a, b) \frac{d x}{d t}+\frac{\partial}{\partial y} f(a, b) \frac{d y}{d t} \\=& f_x (a, b) \cos \theta+ f_y (a, b) \sin \theta \\=&\left(f_x (a, b), f_y (a, b)\right) \cdot(\cos \theta, \sin \theta) \end{aligned}
 $$
