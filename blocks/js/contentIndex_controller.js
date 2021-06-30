@@ -166,10 +166,10 @@ function getMathJaxMarkDown(str) {
     var count = 0;
     var start = -1, end = -1;
     var operation = str;
-    while ((start = operation.search(/\{\[\{.*\}\]\}/ig)) >= 0) {
+    while ((start = operation.search(/\{\[\{[\s\S]*?\}\]\}/ig)) >= 0) {
         end = operation.search(/\}\]\}/ig);
         mathlist.push(operation.slice(start + 3, end));
-        operation = operation.replace(/\{\[\{.*?\}\]\}/, "{^{" + count + "}^}");
+        operation = operation.replace(/\{\[\{[\s\S]*?\}\]\}/, "{^{" + count + "}^}");
     }
     operation = converter.makeHtml(operation);
     for (let index = 0; index < mathlist.length; index++) {
