@@ -173,7 +173,7 @@ function getMathJaxMarkDown(str) {
     }
     operation = converter.makeHtml(operation);
     for (let index = 0; index < mathlist.length; index++) {
-        const element = array[index];
+        const element = mathlist[index];
         operation = operation.replace("{^{" + index + "}^}", element);
     }
     return operation;
