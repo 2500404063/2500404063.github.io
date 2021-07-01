@@ -14,7 +14,7 @@ var contentArray = {
             "不要犹豫,Just Do It": "./pages_psyeco/life-psy/cause/3.md"
         },
         "论学习": {
-            "高效学习": ""
+            "高效学习": "./pages_psyeco/life-psy/study/1.md"
         }
     },
     "经济学": {},
