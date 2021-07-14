@@ -97,9 +97,8 @@ function getPage(obj) {
     contentRequester.send();
     contentRequester.onreadystatechange = function () {
         if (contentRequester.readyState == 4 && contentRequester.status == 200) {
-            contentContainer.innerHTML = getMathJaxMarkDown(contentRequester.responseText);
+            contentContainer.innerHTML = markdownToHtml(contentRequester.responseText);
             MathJax.typeset();
-            contentContainer.innerHTML = converter.makeHtml(contentContainer.innerHTML);
             var codeBlocks = document.querySelectorAll('pre code');
             for (const key in codeBlocks) {
                 const element = codeBlocks[key];
@@ -130,9 +129,8 @@ function getDefaultPage() {
     contentRequester.send();
     contentRequester.onreadystatechange = function () {
         if (contentRequester.readyState == 4 && contentRequester.status == 200) {
-            contentContainer.innerHTML = getMathJaxMarkDown(contentRequester.responseText);
+            contentContainer.innerHTML = markdownToHtml(contentRequester.responseText);
             MathJax.typeset();
-            contentContainer.innerHTML = converter.makeHtml(contentContainer.innerHTML);
             var codeBlocks = document.querySelectorAll('pre code');
             for (const key in codeBlocks) {
                 const element = codeBlocks[key];
@@ -148,7 +146,7 @@ function getDefaultPage() {
 var lastClickTime;
 function showMenu() {
     clickTime = new Date();
-    if (clickTime - lastClickTime < 300) {
+    if (clickTime - lastClickTime < 220) {
         if (document.documentElement.clientWidth < 768) {
             document.getElementById("navigation").style.display = 'block';
             document.getElementById("contentWarp").style.display = 'none';
@@ -159,23 +157,4 @@ function showMenu() {
         }
     }
     lastClickTime = clickTime;
-}
-
-function getMathJaxMarkDown(str) {
-    var mathlist = new Array();
-    var count = 0;
-    var start = -1, end = -1;
-    var operation = str;
-    while ((start = operation.search(/\{\[\{[\s\S]*?\}\]\}/ig)) >= 0) {
-        end = operation.search(/\}\]\}/ig);
-        mathlist.push(operation.slice(start + 3, end));
-        operation = operation.replace(/\{\[\{[\s\S]*?\}\]\}/, "{^{" + count + "}^}");
-        count++;
-    }
-    operation = converter.makeHtml(operation);
-    for (let index = 0; index < mathlist.length; index++) {
-        const element = mathlist[index];
-        operation = operation.replace("{^{" + index + "}^}", element);
-    }
-    return operation;
 }

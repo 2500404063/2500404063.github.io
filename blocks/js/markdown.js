@@ -10,6 +10,7 @@ let _convertRuntime;
 
 //Only for one complete markdown article.
 function markdownToHtml(mdSrc) {
+    mdSrc = mdSrc.replace(/\r/mg, "");
     _convertRuntime = {
         //false: toBeStart
         //true: toBeEnd
@@ -40,7 +41,11 @@ function markdownToHtml(mdSrc) {
     for (let index = 0; index < lines.length; index++) {
         const element = lines[index];
         output += element;
-        if (index != lines.length - 1) output += '\n';
+        if (element == '<pre><code>') {
+            if (index != lines.length - 1) output;
+        } else {
+            if (index != lines.length - 1) output += '\n';
+        }
     }
     output = _convertOriginal(output);
     return output;
@@ -110,7 +115,7 @@ function _dispatcher(line) {
 }
 
 function _isContainTitle(line) {
-    let pos = line.search(/#/);
+    let pos = line.search(/^(#{1,6})\s.*/i);
     if (pos >= 0) {
         return true;
     }
@@ -131,13 +136,13 @@ function _isBreakLine(line) {
     //9. in ul
     //10. ---
     //11. <img>
-    if (line.search(/<h[1-6].*<\/h[1-6]>/) >= 0) {
+    if (line.search(/<h[1-6].*<\/h[1-6]>/i) >= 0) {
         return false;
     }
-    if (line.search(/(<blockquote>)|(<\/blockquote>)/) >= 0) {
+    if (line.search(/(<blockquote>)|(<\/blockquote>)/i) >= 0) {
         return false;
     }
-    if (line.search('<p>') >= 0 || line.search('</p>') >= 0) {
+    if (line.search('<p>') >= 0 || line.search('</p>') >= 0 || line.search('<P>') >= 0 || line.search('</P>') >= 0) {
         return false;
     }
     if (line == '') {
@@ -258,7 +263,7 @@ function _isLink(line) {
 }
 
 function _isImg(line) {
-    if (line.search(/!\[.*\]\(.*\)/ >= 0)) {
+    if (line.search(/!\[.*\]\(.*\)/) >= 0) {
         return true;
     } else {
         return false;
@@ -285,17 +290,17 @@ function _convertTitle(line) {
     //symbol:#/##/###/####/#####/######
     //1. only one line
     //2. only one space before main text
-    if (line.search(/^(#{1})\s.*$/) >= 0) {
+    if (line.search(/^(#{1})\s.*/) >= 0) {
         return '<h1 id=\'md_h1_' + _convertTitleIdCount++ + '\'>' + line.substr(2, line.length - 2) + '</h1>';
-    } else if (line.search(/^(#{2})\s.*$/) >= 0) {
+    } else if (line.search(/^(#{2})\s.*/) >= 0) {
         return '<h2 id=\'md_h2_' + _convertTitleIdCount++ + '\'>' + line.substr(3, line.length - 3) + '</h2>';
-    } else if (line.search(/^(#{3})\s.*$/) >= 0) {
+    } else if (line.search(/^(#{3})\s.*/) >= 0) {
         return '<h3 id=\'md_h3_' + _convertTitleIdCount++ + '\'>' + line.substr(4, line.length - 4) + '</h3>';
-    } else if (line.search(/^(#{4})\s.*$/) >= 0) {
+    } else if (line.search(/^(#{4})\s.*/) >= 0) {
         return '<h4 id=\'md_h4_' + _convertTitleIdCount++ + '\'>' + line.substr(5, line.length - 5) + '</h4>';
-    } else if (line.search(/^(#{5})\s.*$/) >= 0) {
+    } else if (line.search(/^(#{5})\s.*/) >= 0) {
         return '<h5 id=\'md_h5_' + _convertTitleIdCount++ + '\'>' + line.substr(6, line.length - 6) + '</h5>';
-    } else if (line.search(/^(#{6})\s.*$/) >= 0) {
+    } else if (line.search(/^(#{6})\s.*/) >= 0) {
         return '<h6 id=\'md_h6_' + _convertTitleIdCount++ + '\'>' + line.substr(7, line.length - 7) + '</h6>';
     } else {
         return "<h1>Markdown convert error: on function _convertTitle(line)</h1>";
@@ -469,9 +474,6 @@ function _convertCodeBlock(line) {
     } else if (line.search(/^(```)$/) >= 0 && _convertRuntime['codeBlock'] == true) {
         line = '</pre></code>';
         _convertRuntime['codeBlock'] = false;
-    }
-    if (_convertRuntime['codeBlock']) {
-        line = line;
     }
     return line;
 }
