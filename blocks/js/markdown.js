@@ -55,7 +55,7 @@ function _dispatcher(line) {
     let containedElements = {
         'title': false,
         'breakLine': false,
-        'paragraph': false,
+        // 'paragraph': false,
         'bold': false,
         'italicized': false,
         'blockquote': false,
@@ -73,10 +73,10 @@ function _dispatcher(line) {
         if (containedElements['title']) {
             line = _convertTitle(line);
         }
-        containedElements['paragraph'] = _isParagraph(line);
-        if (containedElements['paragraph']) {
-            line = _convertParagraph(line);
-        }
+        // containedElements['paragraph'] = _isParagraph(line);
+        // if (containedElements['paragraph']) {
+        //     line = _convertParagraph(line);
+        // }
         containedElements['splitLine'] = _isSplitLine(line);
         if (containedElements['splitLine']) {
             line = _convertSplitLine(line);
@@ -167,7 +167,7 @@ function _isBreakLine(line) {
     if (line.search('<img') >= 0) {
         return false;
     }
-    if (line == '<pre></code>') {
+    if (line == '</pre></code>') {
         return false;
     }
     return true;
@@ -310,15 +310,15 @@ function _convertTitle(line) {
     }
 }
 
-function _convertParagraph(line) {
-    if (line == '{') {
-        return '<p>'
-    } else if (line == '}') {
-        return '</p>'
-    } else {
-        return '<h1>Markdown convert error: on function _convertParagraph(line)</h1>';
-    }
-}
+// function _convertParagraph(line) {
+//     if (line == '{') {
+//         return '<p>'
+//     } else if (line == '}') {
+//         return '</p>'
+//     } else {
+//         return '<h1>Markdown convert error: on function _convertParagraph(line)</h1>';
+//     }
+// }
 
 function _convertBreakLine(line) {
     return '<p>' + line + '</p>';
