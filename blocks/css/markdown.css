@@ -97,6 +97,10 @@ code {
     padding: 5px;
 }
 
+pre {
+    margin-top: 10px;
+}
+
 td.hljs-ln-line.hljs-ln-numbers {
     padding-right: 15px;
     color: whitesmoke;
@@ -108,7 +112,7 @@ td.hljs-ln-line.hljs-ln-code {
     border-bottom: none;
 }
 
-input[type='checkbox']:before {
+/* input[type='checkbox']:before {
     border-radius: 0.2rem;
     margin-top: -0.08rem;
     margin-left: -0.1rem;
@@ -136,7 +140,7 @@ input[type="checkbox"]:checked:before {
 
 input[type="checkbox"]:hover:checked:before {
     background-color: #1968e6;
-}
+} */
 
 img {
     padding: .25rem;
