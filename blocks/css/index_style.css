@@ -133,3 +133,8 @@ html body {
     justify-content: center;
     align-items: center;
 }
+
+/*因为Tex插件，导致左上角有一个白点，不知道是干嘛的，就先隐藏*/
+.MJX_LiveRegion{
+    display: none;
+}
