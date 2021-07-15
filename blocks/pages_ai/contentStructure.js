@@ -7,8 +7,4 @@ var contentArray = {
         "正态分布":"./pages_ai/math/4.md",
         "贝叶斯":"./pages_ai/math/5.md"
     },
-    "list2": {
-        "item2_1": "./pages_ai/hello/main.md",
-        "item2_2": "./pages_ai/hello/main.md"
-    }
 };
