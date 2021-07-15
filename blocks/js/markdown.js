@@ -161,7 +161,7 @@ function _isBreakLine(line) {
     if (_convertRuntime['ul'] > 0) {
         return false;
     }
-    if (line == '---') {
+    if (line == '<hr>') {
         return false;
     }
     if (line.search('<img') >= 0) {
