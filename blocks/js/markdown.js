@@ -136,6 +136,7 @@ function _isBreakLine(line) {
     //9. in ul
     //10. ---
     //11. <img>
+    //12. <pre><code> <pre></code>
     if (line.search(/<h[1-6].*<\/h[1-6]>/i) >= 0) {
         return false;
     }
@@ -164,6 +165,9 @@ function _isBreakLine(line) {
         return false;
     }
     if (line.search('<img') >= 0) {
+        return false;
+    }
+    if (line == '<pre></code>') {
         return false;
     }
     return true;
