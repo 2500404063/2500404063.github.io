@@ -145,7 +145,7 @@ function _isBreakLine(line) {
     if (line.search('<p>') >= 0 || line.search('</p>') >= 0 || line.search('<P>') >= 0 || line.search('</P>') >= 0) {
         return false;
     }
-    if (line == '') {
+    if (line == '' || line.search(/^\s*$/) >= 0) {
         return false;
     }
     if (line.replace(/\s*/g, '') == '[ol' || line.replace(/\s*/g, '') == 'ol]') {
@@ -271,7 +271,6 @@ function _isImg(line) {
 }
 
 function _originalStart(line) {
-    let originalExisted = false;
     let pos0 = -1, pos1 = -1;
     while (true) {
         pos0 = line.search(/\{:.*?:\}/);
@@ -414,9 +413,11 @@ function _convertOlUl(line) {
     else if (line.replace(/\s*/g, "") == 'ol]') {
         _convertRuntime['ol']--;
         return '</ol>';
-    } else {
+    } else if (line.search(/^\s*$/gm) == -1 || line != '') {
         let wordPos = line.search(/\S/);
         return '<li>' + line.slice(wordPos) + '</li>';
+    } else {
+        return '';
     }
 }
 
@@ -474,6 +475,15 @@ function _convertCodeBlock(line) {
     } else if (line.search(/^(```)$/) >= 0 && _convertRuntime['codeBlock'] == true) {
         line = '</pre></code>';
         _convertRuntime['codeBlock'] = false;
+    }
+    while (true) {
+        let pos0 = line.search(/`.*?`/);
+        if (pos0 >= 0) {
+            let pos1 = line.indexOf('`', pos0 + 1);
+            line = line.slice(0, pos0) + '<code>' + line.slice(pos0 + 1, pos1) + '</code>' + line.slice(pos1 + 1);
+        } else {
+            break;
+        }
     }
     return line;
 }
