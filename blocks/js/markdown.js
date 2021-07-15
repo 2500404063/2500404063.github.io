@@ -321,7 +321,7 @@ function _convertParagraph(line) {
 }
 
 function _convertBreakLine(line) {
-    return line + '<br>';
+    return '<p>' + line + '</p>';
 }
 
 function _convertBold(line) {
