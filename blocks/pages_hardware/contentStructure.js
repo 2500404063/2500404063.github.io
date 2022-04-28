@@ -1,0 +1,86 @@
+var contentArray = {
+    "Default Page": "./pages_hardware/default/default.md",
+    "从MSC-51看MCU": {
+        "基本概念": "./pages_hardware/mcustudy/1.md",
+        "GPIO": "./pages_hardware/mcustudy/2.md",
+        "Clock": "./pages_hardware/mcustudy/3.md",
+        "Timer": "./pages_hardware/mcustudy/4.md",
+        "UART": "./pages_hardware/mcustudy/5.md",
+        "EEPROM": "./pages_hardware/mcustudy/6.md",
+        "比较器": "./pages_hardware/mcustudy/7.md",
+        "ADC模数转换": "./pages_hardware/mcustudy/8.md",
+        "PCA/CCP": "./pages_hardware/mcustudy/9.md",
+        "SPI": "./pages_hardware/mcustudy/10.md"
+    },
+    'ARM Core': {
+        'ARM编译器': './pages_hardware/arm/10.md',
+        'ARM IDE(PlatformIO)': './pages_hardware/arm/20.md',
+        'LD链接文件': './pages_hardware/arm/30.md',
+        'Startup编写': './pages_hardware/arm/40.md',
+        '实战构建ARM-GCC项目': './pages_hardware/arm/50.md'
+    },
+    'FPGA': {
+        'FPGA原理': './pages_hardware/fpga/10.md'
+    },
+    '机器人相关': {
+        'PID算法': './pages_hardware/robot/10.pid.md',
+    },
+    '数字电路': {
+        '电路分析': {
+            '复杂电路分析': './pages_hardware/digital/10.md',
+        }
+    },
+    '模拟电路': {
+        '非理想环境的知识': './pages_hardware/analog/0.reality.md',
+        '二极管': './pages_hardware/analog/1.二极管.md',
+        '三极管': './pages_hardware/analog/2.三极管.md',
+        '场效应管': './pages_hardware/analog/3.FET.md',
+        'TTL基本放到电路': './pages_hardware/analog/4.TTL基本放大电路.md',
+        'MOS放大电路': './pages_hardware/analog/5.MOS放大电路.md',
+        '放大电路总结': './pages_hardware/analog/6.放大电路总结.md',
+        '差分电路': './pages_hardware/analog/7.差分电路.md',
+        '功率放大电路': './pages_hardware/analog/8.功率放大电路.md',
+        '集成运算放大电路': './pages_hardware/analog/9.集成运算放大电路.md',
+        '反馈放大电路': './pages_hardware/analog/10.反馈放大电路.md',
+    },
+    'PCB设计规范': {
+        '基本概念': './pages_hardware/pcbdesign/1.definitions.md',
+        'PCB分层设计': './pages_hardware/pcbdesign/2.pcblayers.md',
+        'PCB设计思想': './pages_hardware/pcbdesign/5.thinking.md',
+        '线宽线距': './pages_hardware/pcbdesign/10.line.md',
+    },
+    '国内微电子企业': {
+        '国科微电子': './pages_hardware/ic_producers/1.md',
+        '景嘉微电子': './pages_hardware/ic_producers/2.md',
+        '紫光微电子': './pages_hardware/ic_producers/3.md'
+    },
+    'USB通用串行总线': {
+        'USB百科': './pages_hardware/usb/10.usb.md',
+        'USB2.0协议': {
+            'USB2.0简介': './pages_hardware/usb/usb2.0/10.usb2.0.md',
+            'USB2.0数据模型': './pages_hardware/usb/usb2.0/20.usb2.0.md',
+            'USB2.0物理层电信号': './pages_hardware/usb/usb2.0/30.usb2.0.md',
+            'USB2.0协议层': './pages_hardware/usb/usb2.0/40.usb2.0.md',
+            'USB2.0设备框架': './pages_hardware/usb/usb2.0/50.usb2.0.md',
+            'USB2.0主机的硬件和软件': './pages_hardware/usb/usb2.0/60.usb2.0.md',
+            'USB2.0集线器Hub': './pages_hardware/usb/usb2.0/70.usb2.0.md'
+        },
+        'HID设备实战': {
+            'HID描述符': './pages_hardware/usb/hid/10.hid.md',
+            'HID报告描述符': './pages_hardware/usb/hid/20.hid.md',
+            'HID主项目': './pages_hardware/usb/hid/30.hid.md',
+            'HID全局项目': './pages_hardware/usb/hid/40.hid.md',
+            'HID局部项目': './pages_hardware/usb/hid/50.hid.md',
+            'HID协议层请求': './pages_hardware/usb/hid/60.hid.md',
+            'HID报告描述符实战': './pages_hardware/usb/hid/70.hid.md'
+        }
+    },
+    '芯片分析': {
+        '电源': {
+            '电源转换稳压芯片': './pages_hardware/pcb_power/10.high2low.md'
+        },
+        '储存': {
+            'EEPORM': 'null'
+        }
+    }
+};
