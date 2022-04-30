@@ -25,7 +25,7 @@ var contentArray = {
         'Verilog规范': './pages_hardware/fpga/20.md',
         'Verilog的编译过程': './pages_hardware/fpga/30.md'
     },
-    '机器人相关': {
+    '控制论': {
         'PID算法': './pages_hardware/robot/10.pid.md',
     },
     '数字电路': {

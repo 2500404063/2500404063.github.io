@@ -1,8 +1,8 @@
 (function() {
     let commonData = {
         'val1': '码龄：5年',
-        'val2': '文章：285',
-        'val3': '粉丝：3565',
+        'val2': '文章：312',
+        'val3': '粉丝：3654',
         'friendLinks': [{
             'name': 'Khaos',
             'link': 'http://khaos.net.cn/'
@@ -35,6 +35,9 @@
             'title': 'FPGA原理',
             'url': '/blocks/hardware.html#3_1'
         }, {
+            'title': 'PID算法',
+            'url': '/blocks/hardware.html#4_0'
+        }, {
             'title': 'ARM-GCC实战环境构建',
             'url': '/blocks/hardware.html#2_4'
         }, {
@@ -50,9 +53,6 @@
             'title': 'ARM编译器',
             'url': '/blocks/hardware.html#2_0'
         }, {
-            'title': '看待爱情',
-            'url': '/blocks/psyeco.html#1_2_0'
-        }, {
             'title': 'USB协议介绍',
             'url': '/blocks/hardware.html#5_0'
         }, {
@@ -61,15 +61,6 @@
         }, {
             'title': 'USB通信介绍',
             'url': '/blocks/hardware.html#5_2'
-        }, {
-            'title': '残差神经网络',
-            'url': '/blocks/ai.html#5_3_0'
-        }, {
-            'title': '循环神经网络',
-            'url': '/blocks/ai.html#5_4_0'
-        }, {
-            'title': 'GAN对抗生成网络',
-            'url': '/blocks/ai.html#5_5_0'
         }]
     }
 
