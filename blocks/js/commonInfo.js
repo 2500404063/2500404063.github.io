@@ -26,6 +26,15 @@
             'link': 'http://www.610i.com/'
         }],
         'latest': [{
+            'title': '半导体储存',
+            'url': '/blocks/hardware.html#5_3'
+        }, {
+            'title': '时序电路设计',
+            'url': '/blocks/hardware.html#5_2'
+        }, {
+            'title': 'FPGA原理',
+            'url': '/blocks/hardware.html#3_1'
+        }, {
             'title': 'ARM-GCC实战环境构建',
             'url': '/blocks/hardware.html#2_4'
         }, {
