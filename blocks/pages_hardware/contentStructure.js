@@ -20,7 +20,10 @@ var contentArray = {
         '实战构建ARM-GCC项目': './pages_hardware/arm/50.md'
     },
     'FPGA': {
-        'FPGA原理': './pages_hardware/fpga/10.md'
+        '可编程逻辑器件的发展': './pages_hardware/fpga/5.md',
+        'FPGA原理': './pages_hardware/fpga/10.md',
+        'Verilog规范': './pages_hardware/fpga/20.md',
+        'Verilog的编译过程': './pages_hardware/fpga/30.md'
     },
     '机器人相关': {
         'PID算法': './pages_hardware/robot/10.pid.md',
@@ -28,7 +31,10 @@ var contentArray = {
     '数字电路': {
         '电路分析': {
             '复杂电路分析': './pages_hardware/digital/10.md',
-        }
+        },
+        '触发器': './pages_hardware/digital/20.md',
+        '时序电路设计': './pages_hardware/digital/30.md',
+        '半导体储存': './pages_hardware/digital/40.md'
     },
     '模拟电路': {
         '非理想环境的知识': './pages_hardware/analog/0.reality.md',
