@@ -23,7 +23,9 @@ var contentArray = {
         '可编程逻辑器件的发展': './pages_hardware/fpga/5.md',
         'FPGA原理': './pages_hardware/fpga/10.md',
         'Verilog规范': './pages_hardware/fpga/20.md',
-        'Verilog的编译过程': './pages_hardware/fpga/30.md'
+        'Verilog的编译过程': './pages_hardware/fpga/30.md',
+        '仿真模式': './pages_hardware/fpga/40.md',
+        '原语和IP核': './pages_hardware/fpga/50.md'
     },
     '控制论': {
         'PID算法': './pages_hardware/robot/10.pid.md',
