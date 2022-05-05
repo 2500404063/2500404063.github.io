@@ -10,6 +10,7 @@ var contentArray = {
             '宁静致远': './pages_psyeco/life-psy/inner/5.md'
         },
         '成熟': {
+            '宁静致远': './pages_psyeco/life-psy/inner/5.md',
             '对待爱情': './pages_psyeco/life-psy/maturity/0.md',
             '工作-心态-健康': './pages_psyeco/life-psy/maturity/1.md',
             '不要犹豫,Just Do It': './pages_psyeco/life-psy/maturity/3.md',
@@ -31,7 +32,7 @@ var contentArray = {
             '知识有什么用': './pages_psyeco/life-psy/study/2.md',
             '连续时间的重要性': './pages_psyeco/life-psy/study/3.md',
             '阅读文献的正确姿势': './pages_psyeco/life-psy/study/4.md',
-            '学习法': 'Null',
+            '论应试': './pages_psyeco/life-psy/study/5.md'
         }
     },
     '音乐': {
