@@ -1,13 +1,14 @@
 var contentArray = {
     'Default Page': './pages_ai/default/default.md',
     '数学基础': {
-        '函数': './pages_ai/math/1.md',
-        '泰勒Taylor': './pages_ai/math/2.md',
-        '拉格朗日乘数法': './pages_ai/math/3.md',
-        '正态分布': './pages_ai/math/4.md',
-        '贝叶斯': './pages_ai/math/5.md',
-        '极大似然估计': 'null',
-        '梯度下降法': 'null'
+        '贝叶斯': './pages_ai/math/1.md',
+        '范数': './pages_ai/math/2.md'
+        // '函数': './pages_ai/math/1.md',
+        // '泰勒Taylor': './pages_ai/math/2.md',
+        // '拉格朗日乘数法': './pages_ai/math/3.md',
+        // '正态分布': './pages_ai/math/4.md',
+        // '极大似然估计': 'null',
+        // '梯度下降法': 'null'
     },
     '数据可视化matplot': {
         'Figure': './pages_ai/matplot/1.Figure.md',
