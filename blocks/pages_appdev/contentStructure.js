@@ -24,6 +24,7 @@ var contentArray = {
     // },
     'Golang': {
         'Go机制分析': './pages_appdev/golang/1.md',
+        'CGO实战一': './pages_appdev/golang/2.md',
         'Go标准库整理': {
             'IO': './pages_appdev/golang/std/10.md',
             'String和[]Byte': './pages_appdev/golang/std/20.md',
@@ -62,7 +63,7 @@ var contentArray = {
     },
     '操作系统': {
         '状态机': './pages_appdev/os/10.md',
-        '并发与线程': '.pages_appdev/os/20.md'
+        '并发与线程': './pages_appdev/os/20.md'
     },
     '网络相关': {
         '路由器-网关': './pages_appdev/network/1.md',

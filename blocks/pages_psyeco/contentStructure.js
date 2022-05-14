@@ -48,6 +48,9 @@ var contentArray = {
             '蝶恋花': 'null'
         }
     },
+    '诗儿': {
+
+    },
     '博弈论': {
         '博弈论概述': './pages_psyeco/game_theory/10.md',
         '完全信息静态博弈': './pages_psyeco/game_theory/20.md',
