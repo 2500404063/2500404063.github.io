@@ -1,5 +1,37 @@
 var contentArray = {
     'Default Page': './pages_appdev/default/default.md',
+    '编译原理': {
+        '语法分析': './pages_appdev/compiling/1.md',
+    },
+    '计算机网络': {
+        '链路层': 'null',
+        '路由器-网关': './pages_appdev/network/1.md',
+        'NAT,端口映射,内网穿透': './pages_appdev/network/2.md'
+    },
+    '操作系统': {
+        '状态机': './pages_appdev/os/10.md',
+        '并发与线程': './pages_appdev/os/20.md'
+    },
+    '重要思想': {
+        '漫谈多任务(多进程|多线程)': './pages_appdev/tech/10.multiTask.md',
+    },
+    '现代计算机语言特性分析': {
+        'C': {
+
+        },
+        'CPP': {
+
+        },
+        'Java': {
+
+        },
+        'Python': {
+
+        },
+        'JS': {
+
+        }
+    },
     'Cpp11': {
         '大纲': './pages_appdev/cpp11/0.outline.md',
         '尾随函数返回值类型': './pages_appdev/cpp11/10.md',
@@ -19,9 +51,6 @@ var contentArray = {
         '协程': './pages_appdev/advanced_cpp/9.md',
         'IO高级': './pages_appdev/advanced_cpp/10.md',
     },
-    // '编译原理': {
-    //     '语法分析': './pages_appdev/compiling/1.md',
-    // },
     'Golang': {
         'Go机制分析': './pages_appdev/golang/1.md',
         'CGO实战一': './pages_appdev/golang/2.md',
@@ -30,9 +59,6 @@ var contentArray = {
             'String和[]Byte': './pages_appdev/golang/std/20.md',
             'flag命令行解析': './pages_appdev/golang/std/30.md',
         }
-    },
-    '重要技术思想': {
-        '漫谈多任务(多进程|多线程)': './pages_appdev/tech/10.multiTask.md',
     },
     '服务后端': {
         '线程池': './pages_appdev/backend/1.md',
@@ -60,13 +86,5 @@ var contentArray = {
             'Flutter高级组件分类': './pages_appdev/mobile/flutter/2.md',
             'Flutter布局系统详解': './pages_appdev/mobile/flutter/3.md',
         }
-    },
-    '操作系统': {
-        '状态机': './pages_appdev/os/10.md',
-        '并发与线程': './pages_appdev/os/20.md'
-    },
-    '网络相关': {
-        '路由器-网关': './pages_appdev/network/1.md',
-        'NAT,端口映射,内网穿透': './pages_appdev/network/2.md'
     }
 };

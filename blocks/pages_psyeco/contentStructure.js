@@ -24,7 +24,7 @@ var contentArray = {
             '物质是首要的': './pages_psyeco/life-psy/maturity/11.md',
             '脱敏': './pages_psyeco/life-psy/maturity/12.md',
             '有底线,坚持底线': './pages_psyeco/life-psy/maturity/13.md',
-            '能专注,沉心': './pages_psyeco/life-psy/maturity/14.md',
+            '论诱惑和专注': './pages_psyeco/life-psy/maturity/14.md',
             '坚持自己的路': './pages_psyeco/life-psy/maturity/15.md',
         },
         '关于学习': {
@@ -48,7 +48,7 @@ var contentArray = {
             '蝶恋花': 'null'
         }
     },
-    '诗儿': {
+    '诗儿词儿': {
 
     },
     '博弈论': {
