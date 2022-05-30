@@ -4,7 +4,8 @@ var contentArray = {
         '语法分析': './pages_appdev/compiling/1.md',
     },
     '计算机网络': {
-        '链路层': 'null',
+        '链路层': './pages_appdev/network/0.md',
+        '网络层': './pages_appdev/network/1.md',
         '路由器-网关': './pages_appdev/network/1.md',
         'NAT,端口映射,内网穿透': './pages_appdev/network/2.md'
     },
