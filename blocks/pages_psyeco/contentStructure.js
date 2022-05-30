@@ -32,7 +32,8 @@ var contentArray = {
             '知识有什么用': './pages_psyeco/life-psy/study/2.md',
             '连续时间的重要性': './pages_psyeco/life-psy/study/3.md',
             '阅读文献的正确姿势': './pages_psyeco/life-psy/study/4.md',
-            '论应试': './pages_psyeco/life-psy/study/5.md'
+            '论应试': './pages_psyeco/life-psy/study/5.md',
+            '论记忆': './pages_psyeco/life-psy/study/6.md',
         }
     },
     '音乐': {
