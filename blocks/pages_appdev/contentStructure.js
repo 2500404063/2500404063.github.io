@@ -6,9 +6,7 @@ var contentArray = {
     '计算机网络': {
         '链路层': './pages_appdev/network/0.md',
         '网络层': './pages_appdev/network/1.md',
-        '运输层': './pages_appdev/network/2.md',
-        '路由器-网关': './pages_appdev/network/1.md',
-        'NAT,端口映射,内网穿透': './pages_appdev/network/2.md'
+        '运输层': './pages_appdev/network/2.md'
     },
     '操作系统': {
         '状态机': './pages_appdev/os/10.md',
