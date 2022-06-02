@@ -164,9 +164,6 @@ function getPage(obj, apageURL, aindexURL) {
             for (const key in codeBlocks) {
                 const element = codeBlocks[key];
                 hljs.highlightAll();
-                hljs.lineNumbersBlock(element, {
-                    singleLine: true
-                });
             }
         } else if (contentRequester.readyState == 4 && contentRequester.status == 404) {
             contentContainer.innerHTML = `<h1>404 Not Found</h1><p>At: ${Date()}</p><p>Requested: ${pageURL}</p><p>Please contact website administrator</p>`;
@@ -203,9 +200,6 @@ function _getDefaultPage() {
             for (const key in codeBlocks) {
                 const element = codeBlocks[key];
                 hljs.highlightAll();
-                hljs.lineNumbersBlock(element, {
-                    singleLine: true
-                });
             }
         } else if (contentRequester.readyState == 4 && contentRequester.status == 404) {
             contentContainer.innerHTML = `<h1>404 Not Found</h1><p>At: ${Date()}</p><p>Requested: ${pageURL}</p><p>Please contact website administrator</p>`;
