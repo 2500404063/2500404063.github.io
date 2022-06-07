@@ -26,7 +26,9 @@ var contentArray = {
         'Verilog的编译过程': './pages_hardware/fpga/30.md',
         '仿真模式': './pages_hardware/fpga/40.md',
         '原语和IP核': './pages_hardware/fpga/50.md',
-        '时钟': './pages_hardware/fpga/60.md'
+        '时钟': './pages_hardware/fpga/60.md',
+        '流水线Pipeline': './pages_hardware/fpga/70.md',
+        'SRAM IP': './pages_hardware/fpga/80.md'
     },
     '控制论': {
         'PID算法': './pages_hardware/robot/10.pid.md',
