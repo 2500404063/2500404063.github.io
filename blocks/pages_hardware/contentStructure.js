@@ -60,10 +60,11 @@ var contentArray = {
         'PCB设计思想': './pages_hardware/pcbdesign/5.thinking.md',
         '线宽线距': './pages_hardware/pcbdesign/10.line.md',
     },
-    '国内微电子企业': {
-        '国科微电子': './pages_hardware/ic_producers/1.md',
-        '景嘉微电子': './pages_hardware/ic_producers/2.md',
-        '紫光微电子': './pages_hardware/ic_producers/3.md'
+    'AXI总线协议': {
+
+    },
+    'AHB|APB总线协议': {
+
     },
     'USB通用串行总线': {
         'USB百科': './pages_hardware/usb/10.usb.md',
@@ -86,7 +87,12 @@ var contentArray = {
             'HID报告描述符实战': './pages_hardware/usb/hid/70.hid.md'
         }
     },
-    '芯片分析': {
+    '国内微电子企业': {
+        '国科微电子': './pages_hardware/ic_producers/1.md',
+        '景嘉微电子': './pages_hardware/ic_producers/2.md',
+        '紫光微电子': './pages_hardware/ic_producers/3.md'
+    },
+    '芯片使用经验': {
         '电源': {
             '电源转换稳压芯片': './pages_hardware/pcb_power/10.high2low.md'
         },
