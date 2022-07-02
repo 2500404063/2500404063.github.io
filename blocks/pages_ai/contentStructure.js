@@ -33,8 +33,7 @@ var contentArray = {
         '决策树': 'null',
         'K-means': 'null',
     },
-    '神经网络': {
-        'ANN人工神经网络': 'null',
+    '经典神经网络': {
         'DNN深度神经网络': 'null',
         'CNN卷积神经网络': {
             '卷积运算': './pages_ai/nn/cnn/1.cnn.md',
@@ -55,22 +54,27 @@ var contentArray = {
             'CGAN(条件对抗生成网络)': './pages_ai/nn/gan/30.cgan.md'
         },
         'DQN网络': 'null',
-        '优化网络和其他': {
-            'L1,L2正则化': './pages_ai/nn/better/10.md',
-            '批标准化BN': './pages_ai/nn/better/20.md',
-            'Dropout': './pages_ai/nn/better/30.md',
-            '优化器选择': './pages_ai/nn/better/40.md',
-            'Embedding': './pages_ai/nn/better/50.md'
-        }
     },
-    '计算机视觉': {
+    '神经网络的重要优化思想': {
+        '神经网络的分析方法': './pages_ai/nn_thinking/0.md',
+        'L1,L2正则化': './pages_ai/nn_thinking/10.md',
+        '批标准化BN': './pages_ai/nn_thinking/20.md',
+        'Dropout': './pages_ai/nn_thinking/30.md',
+        '优化器选择': './pages_ai/nn_thinking/40.md',
+        'Embedding': './pages_ai/nn_thinking/50.md',
+        'DenseNet': './pages_ai/nn_thinking/60.md',
+        'CSPNet': './pages_ai/nn_thinking/70.md',
+        '许多采样机制': './pages_ai/nn_thinking/80.md',
+    },
+    '计算机视觉原理': {
         '边框检测': './pages_ai/cv/1.bounding.md',
         '特征点检测': './pages_ai/cv/2.landmark.md',
         '目标检测': {
             '窗口滑动法(Two-Stage)': './pages_ai/cv/objectdetection/1.two-stage.md',
             'Yolo(one-Stage)': './pages_ai/cv/objectdetection/2.yolo.md',
             'Yolo实现TF2.7': './pages_ai/cv/objectdetection/2.yolo_tf2.md',
-            'SSD(one-Stage)': './pages_ai/cv/objectdetection/3.ssd.md'
+            'SSD(one-Stage)': './pages_ai/cv/objectdetection/3.ssd.md',
+            'YoLov5的原理分析': './pages_ai/cv/objectdetection/4.yolov5.md'
         },
         '语义分割': './pages_ai/cv/4.SemanticSegmentation.md'
     },
