@@ -28,7 +28,8 @@ var contentArray = {
         '原语和IP核': './pages_hardware/fpga/50.md',
         '时钟': './pages_hardware/fpga/60.md',
         '流水线Pipeline': './pages_hardware/fpga/70.md',
-        'SRAM IP': './pages_hardware/fpga/80.md'
+        'SRAM IP': './pages_hardware/fpga/80.md',
+        'UART协议实现': './pages_hardware/fpga/90.md'
     },
     '控制论': {
         'PID算法': './pages_hardware/robot/10.pid.md',
@@ -61,7 +62,8 @@ var contentArray = {
         '线宽线距': './pages_hardware/pcbdesign/10.line.md',
     },
     'AXI总线协议': {
-
+        'AXI总线介绍': './pages_hardware/axi/10.md',
+        'AXI总线信号描述': './pages_hardware/axi/20.md'
     },
     'AHB|APB总线协议': {
 
@@ -86,18 +88,13 @@ var contentArray = {
             'HID协议层请求': './pages_hardware/usb/hid/60.hid.md',
             'HID报告描述符实战': './pages_hardware/usb/hid/70.hid.md'
         }
-    },
-    '国内微电子企业': {
-        '国科微电子': './pages_hardware/ic_producers/1.md',
-        '景嘉微电子': './pages_hardware/ic_producers/2.md',
-        '紫光微电子': './pages_hardware/ic_producers/3.md'
-    },
-    '芯片使用经验': {
-        '电源': {
-            '电源转换稳压芯片': './pages_hardware/pcb_power/10.high2low.md'
-        },
-        '储存': {
-            'EEPORM': 'null'
-        }
     }
+    // '芯片使用经验': {
+    //     '电源': {
+    //         '电源转换稳压芯片': './pages_hardware/pcb_power/10.high2low.md'
+    //     },
+    //     '储存': {
+    //         'EEPORM': 'null'
+    //     }
+    // }
 };
