@@ -63,7 +63,9 @@ var contentArray = {
     },
     'AXI总线协议': {
         'AXI总线介绍': './pages_hardware/axi/10.md',
-        'AXI总线信号描述': './pages_hardware/axi/20.md'
+        'AXI总线信号描述': './pages_hardware/axi/20.md',
+        'AXI单接口协议分析': './pages_hardware/axi/30.md',
+        'AXI总线事务结构': './pages_hardware/axi/40.md'
     },
     'AHB|APB总线协议': {
 
