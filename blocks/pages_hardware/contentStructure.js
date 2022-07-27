@@ -29,7 +29,9 @@ var contentArray = {
         '时钟': './pages_hardware/fpga/60.md',
         '流水线Pipeline': './pages_hardware/fpga/70.md',
         'SRAM IP': './pages_hardware/fpga/80.md',
-        'UART协议实现': './pages_hardware/fpga/90.md'
+        'UART协议实现': './pages_hardware/fpga/90.md',
+        'FPGA设计技巧':'./pages_hardware/fpga/100.md',
+        '流水线思想':'./pages_hardware/fpga/110.md'
     },
     '控制论': {
         'PID算法': './pages_hardware/robot/10.pid.md',
