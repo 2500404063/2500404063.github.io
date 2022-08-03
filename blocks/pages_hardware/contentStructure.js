@@ -30,11 +30,15 @@ var contentArray = {
         '流水线Pipeline': './pages_hardware/fpga/70.md',
         'SRAM IP': './pages_hardware/fpga/80.md',
         'UART协议实现': './pages_hardware/fpga/90.md',
-        'FPGA设计技巧':'./pages_hardware/fpga/100.md',
-        '流水线思想':'./pages_hardware/fpga/110.md'
+        'FPGA设计技巧': './pages_hardware/fpga/100.md',
+        '流水线思想': './pages_hardware/fpga/110.md'
     },
     '控制论': {
-        'PID算法': './pages_hardware/robot/10.pid.md',
+        'PID Algorithm': './pages_hardware/robot/10.pid.md',
+        'Mean Filter': './pages_hardware/robot/20.md',
+        'Kalman Filter': './pages_hardware/robot/30.md',
+        'Kalman Filter Example': './pages_hardware/robot/40.md',
+        'KF Filters Gaussian Noise': './pages_hardware/robot/50.md'
     },
     '数字电路': {
         '电路分析': {
