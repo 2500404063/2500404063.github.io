@@ -1,5 +1,6 @@
 var contentArray = {
     "Default Page": "./pages_hardware/default/default.md",
+    '芯片企业整理': './pages_hardware/default/ic_industry.md',
     "从MSC-51看MCU": {
         "基本概念": "./pages_hardware/mcustudy/1.md",
         "GPIO": "./pages_hardware/mcustudy/2.md",
@@ -10,7 +11,6 @@ var contentArray = {
         "比较器": "./pages_hardware/mcustudy/7.md",
         "ADC模数转换": "./pages_hardware/mcustudy/8.md",
         "PCA/CCP": "./pages_hardware/mcustudy/9.md",
-        "SPI": "./pages_hardware/mcustudy/10.md"
     },
     'ARM Core': {
         'ARM编译器': './pages_hardware/arm/10.md',
@@ -60,6 +60,10 @@ var contentArray = {
         '功率放大电路': './pages_hardware/analog/8.功率放大电路.md',
         '集成运算放大电路': './pages_hardware/analog/9.集成运算放大电路.md',
         '反馈放大电路': './pages_hardware/analog/10.反馈放大电路.md',
+        'MOSFET个人理解': './pages_hardware/analog/11.MOSFET.md'
+    },
+    '传感器': {
+        '记OV2640摄像头': './pages_hardware/sensors/10.md',
     },
     'PCB设计规范': {
         '基本概念': './pages_hardware/pcbdesign/1.definitions.md',
@@ -67,42 +71,37 @@ var contentArray = {
         'PCB设计思想': './pages_hardware/pcbdesign/5.thinking.md',
         '线宽线距': './pages_hardware/pcbdesign/10.line.md',
     },
-    'AXI总线协议': {
-        'AXI总线介绍': './pages_hardware/axi/10.md',
-        'AXI总线信号描述': './pages_hardware/axi/20.md',
-        'AXI单接口协议分析': './pages_hardware/axi/30.md',
-        'AXI总线事务结构': './pages_hardware/axi/40.md'
-    },
-    'AHB|APB总线协议': {
-
-    },
-    'USB通用串行总线': {
-        'USB百科': './pages_hardware/usb/10.usb.md',
-        'USB2.0协议': {
-            'USB2.0简介': './pages_hardware/usb/usb2.0/10.usb2.0.md',
-            'USB2.0数据模型': './pages_hardware/usb/usb2.0/20.usb2.0.md',
-            'USB2.0物理层电信号': './pages_hardware/usb/usb2.0/30.usb2.0.md',
-            'USB2.0协议层': './pages_hardware/usb/usb2.0/40.usb2.0.md',
-            'USB2.0设备框架': './pages_hardware/usb/usb2.0/50.usb2.0.md',
-            'USB2.0主机的硬件和软件': './pages_hardware/usb/usb2.0/60.usb2.0.md',
-            'USB2.0集线器Hub': './pages_hardware/usb/usb2.0/70.usb2.0.md'
+    '总线协议': {
+        '简单通信总线': {
+            "SPI": './pages_hardware/bus/10.md',
+            "IIC": './pages_hardware/bus/20.md'
         },
-        'HID设备实战': {
-            'HID描述符': './pages_hardware/usb/hid/10.hid.md',
-            'HID报告描述符': './pages_hardware/usb/hid/20.hid.md',
-            'HID主项目': './pages_hardware/usb/hid/30.hid.md',
-            'HID全局项目': './pages_hardware/usb/hid/40.hid.md',
-            'HID局部项目': './pages_hardware/usb/hid/50.hid.md',
-            'HID协议层请求': './pages_hardware/usb/hid/60.hid.md',
-            'HID报告描述符实战': './pages_hardware/usb/hid/70.hid.md'
+        'AXI总线协议': {
+            'AXI总线介绍': './pages_hardware/axi/10.md',
+            'AXI总线信号描述': './pages_hardware/axi/20.md',
+            'AXI单接口协议分析': './pages_hardware/axi/30.md',
+            'AXI总线事务结构': './pages_hardware/axi/40.md'
+        },
+        'USB通用串行总线': {
+            'USB百科': './pages_hardware/usb/10.usb.md',
+            'USB2.0协议': {
+                'USB2.0简介': './pages_hardware/usb/usb2.0/10.usb2.0.md',
+                'USB2.0数据模型': './pages_hardware/usb/usb2.0/20.usb2.0.md',
+                'USB2.0物理层电信号': './pages_hardware/usb/usb2.0/30.usb2.0.md',
+                'USB2.0协议层': './pages_hardware/usb/usb2.0/40.usb2.0.md',
+                'USB2.0设备框架': './pages_hardware/usb/usb2.0/50.usb2.0.md',
+                'USB2.0主机的硬件和软件': './pages_hardware/usb/usb2.0/60.usb2.0.md',
+                'USB2.0集线器Hub': './pages_hardware/usb/usb2.0/70.usb2.0.md'
+            },
+            'HID设备实战': {
+                'HID描述符': './pages_hardware/usb/hid/10.hid.md',
+                'HID报告描述符': './pages_hardware/usb/hid/20.hid.md',
+                'HID主项目': './pages_hardware/usb/hid/30.hid.md',
+                'HID全局项目': './pages_hardware/usb/hid/40.hid.md',
+                'HID局部项目': './pages_hardware/usb/hid/50.hid.md',
+                'HID协议层请求': './pages_hardware/usb/hid/60.hid.md',
+                'HID报告描述符实战': './pages_hardware/usb/hid/70.hid.md'
+            }
         }
     }
-    // '芯片使用经验': {
-    //     '电源': {
-    //         '电源转换稳压芯片': './pages_hardware/pcb_power/10.high2low.md'
-    //     },
-    //     '储存': {
-    //         'EEPORM': 'null'
-    //     }
-    // }
 };
