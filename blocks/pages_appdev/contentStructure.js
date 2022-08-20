@@ -1,6 +1,7 @@
 var contentArray = {
     'Default Page': './pages_appdev/default/default.md',
     '编译原理': {
+        '文法类别': '',
         '语法分析': './pages_appdev/compiling/1.md',
     },
     '计算机网络': {
@@ -10,7 +11,13 @@ var contentArray = {
     },
     '操作系统': {
         '状态机': './pages_appdev/os/10.md',
-        '并发与线程': './pages_appdev/os/20.md'
+        '并发与线程': './pages_appdev/os/20.md',
+        'RTOS设计(一)': './pages_appdev/os/30.md'
+    },
+    '汇编': {
+        'CPU基本概念': './pages_appdev/asm/x86asm/1.basic_concepts.md',
+        'X86下的寄存器': './pages_appdev/asm/x86asm/2.registers.md',
+        'X86汇编GAS和IAS比较': './pages_appdev/asm/x86asm/3.asmlang.md',
     },
     '重要思想': {
         '漫谈多任务(多进程|多线程)': './pages_appdev/tech/10.multiTask.md',

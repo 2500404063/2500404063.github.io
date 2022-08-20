@@ -53,23 +53,30 @@ var contentArray = {
         '二极管': './pages_hardware/analog/1.二极管.md',
         '三极管': './pages_hardware/analog/2.三极管.md',
         '场效应管': './pages_hardware/analog/3.FET.md',
-        'TTL基本放到电路': './pages_hardware/analog/4.TTL基本放大电路.md',
+        '三极管基本放大电路': './pages_hardware/analog/4.Triode基本放大电路.md',
         'MOS放大电路': './pages_hardware/analog/5.MOS放大电路.md',
         '放大电路总结': './pages_hardware/analog/6.放大电路总结.md',
         '差分电路': './pages_hardware/analog/7.差分电路.md',
         '功率放大电路': './pages_hardware/analog/8.功率放大电路.md',
         '集成运算放大电路': './pages_hardware/analog/9.集成运算放大电路.md',
         '反馈放大电路': './pages_hardware/analog/10.反馈放大电路.md',
-        'MOSFET个人理解': './pages_hardware/analog/11.MOSFET.md'
+        'MOSFET个人理解': './pages_hardware/analog/11.MOSFET.md',
+        '三极管/MOS管选型': './pages_hardware/analog/12.md'
     },
     '传感器': {
+        'MPU6500': '',
+        'MMC5883L/QMC5883L': '',
+        'BMP280': '',
         '记OV2640摄像头': './pages_hardware/sensors/10.md',
     },
-    'PCB设计规范': {
+    'PCB设计': {
         '基本概念': './pages_hardware/pcbdesign/1.definitions.md',
         'PCB分层设计': './pages_hardware/pcbdesign/2.pcblayers.md',
-        'PCB设计思想': './pages_hardware/pcbdesign/5.thinking.md',
+        'PCB设计规范': './pages_hardware/pcbdesign/5.pcb_rule.md',
+        'PCB布局布线': './pages_hardware/pcbdesign/7.layout_wire.md',
         '线宽线距': './pages_hardware/pcbdesign/10.line.md',
+        'SMD选型': './pages_hardware/pcbdesign/30.SMD.md',
+        'RC计算工具': './pages_hardware/pcbdesign/tool_rc.md'
     },
     '总线协议': {
         '简单通信总线': {

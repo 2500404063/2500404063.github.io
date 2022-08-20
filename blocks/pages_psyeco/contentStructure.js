@@ -1,5 +1,8 @@
 var contentArray = {
     'Default Page': './pages_psyeco/default/default.md',
+    '最好的安排': {
+        '我的理工科生涯':'./pages_psyeco/mylife/10.skills.md'
+    },
     '生活哲学': {
         '为什么要哲学?': './pages_psyeco/life-psy/1.md',
         '精神世界': {
@@ -36,6 +39,9 @@ var contentArray = {
             '论记忆': './pages_psyeco/life-psy/study/6.md',
         }
     },
+    '学习系统论': {
+        '序': './pages_psyeco/study_system/10.md'
+    },
     '音乐': {
         '进阶乐理': {
             '和弦原理': './pages_psyeco/music/chords/1.guitar_chords.md',
@@ -50,7 +56,7 @@ var contentArray = {
         }
     },
     '诗儿词儿': {
-
+        '人生路上的人':'./pages_psyeco/poems/10.md'
     },
     '博弈论': {
         '博弈论概述': './pages_psyeco/game_theory/10.md',
