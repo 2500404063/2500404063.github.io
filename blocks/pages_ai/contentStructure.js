@@ -33,6 +33,9 @@ var contentArray = {
         '决策树': 'null',
         'K-means': 'null',
     },
+    '通用人工智能思考': {
+        '短路径学习模型': './pages_ai/ideas/10.md'
+    },
     '经典神经网络': {
         'DNN深度神经网络': 'null',
         'CNN卷积神经网络': {

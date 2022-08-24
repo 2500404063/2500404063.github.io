@@ -3,6 +3,23 @@ var contentArray = {
     '编译原理': {
         '文法类别': '',
         '语法分析': './pages_appdev/compiling/1.md',
+        '现代计算机语言特性分析': {
+            'C': {
+        
+            },
+            'CPP': {
+        
+            },
+            'Java': {
+        
+            },
+            'Python': {
+        
+            },
+            'JS': {
+        
+            }
+        }
     },
     '计算机网络': {
         '链路层': './pages_appdev/network/0.md',
@@ -12,7 +29,12 @@ var contentArray = {
     '操作系统': {
         '状态机': './pages_appdev/os/10.md',
         '并发与线程': './pages_appdev/os/20.md',
-        'RTOS设计(一)': './pages_appdev/os/30.md'
+        'RTOS设计(一)': './pages_appdev/os/30.md',
+        'RTOS设计(二)': './pages_appdev/os/40.md',
+        'RTOS设计(三)': './pages_appdev/os/50.md',
+        'RTOS设计(四)': './pages_appdev/os/60.md',
+        'RTOS设计(五)': './pages_appdev/os/70.md',
+        'RTOS设计(六)': './pages_appdev/os/80.md'
     },
     '汇编': {
         'CPU基本概念': './pages_appdev/asm/x86asm/1.basic_concepts.md',
@@ -21,23 +43,6 @@ var contentArray = {
     },
     '重要思想': {
         '漫谈多任务(多进程|多线程)': './pages_appdev/tech/10.multiTask.md',
-    },
-    '现代计算机语言特性分析': {
-        'C': {
-
-        },
-        'CPP': {
-
-        },
-        'Java': {
-
-        },
-        'Python': {
-
-        },
-        'JS': {
-
-        }
     },
     'Cpp11': {
         '大纲': './pages_appdev/cpp11/0.outline.md',
